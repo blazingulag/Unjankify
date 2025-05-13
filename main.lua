@@ -6,6 +6,7 @@ Unjank.old_cardarea = copy_table(Unjank.config.cardarea)
 
 SMODS.load_file('lib/main_menu.lua')()
 SMODS.load_file('lib/cardarea.lua')()
+--SMODS.load_file('lib/customize_deck.lua')()
 
 
 function Unjank.create_UIBox_generic_options(args)
