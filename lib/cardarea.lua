@@ -1,4 +1,4 @@
-local pos_factor = 10
+local pos_factor = 15
 
 local orig_set_screen_positions = set_screen_positions
 function set_screen_positions()
