@@ -44,6 +44,7 @@ end
 function G.FUNCS.exit_menu_box(a)
 	SMODS.save_all_config()
 	G.ADJUST_MENU:remove()
+	G.FUNCS.openModUI_Unjank()
 end
 
 function unjank_menu_box()
