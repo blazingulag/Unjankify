@@ -82,7 +82,7 @@ G.FUNCS.slider = function(e)
     orig_slider(e)
 end
 
-SMODS.current_mod.config_tab = function()
+Unjank.config_tab = function()
 	return {
 		n = G.UIT.ROOT,
 		config = { align = 'cm', padding = 0.07, emboss = 0.05, r = 0.1, colour = G.C.BLACK, minh = 2.5 ,minw = 7 },
@@ -110,4 +110,5 @@ SMODS.current_mod.config_tab = function()
 		}
 	}
 end
+SMODS.current_mod.config_tab = Unjank.config_tab
 

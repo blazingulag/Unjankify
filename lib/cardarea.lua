@@ -16,12 +16,14 @@ end
 
 function G.FUNCS.unjank_adjust_cardarea(a)
     local areas = {}
+	local no_areas = true
 	for k,v in pairs(Unjank.config.cardarea) do
 		if G[k] then
 			areas[k] = G[k]
+			no_areas = false
 		end
 	end
-    if areas ~= {} then
+    if not no_areas then
         G.FUNCS.exit_overlay_menu()
 
         G.ADJUST_AREAS_SELECTION = UIBox({
@@ -71,6 +73,7 @@ end
 function G.FUNCS.exit_area_box()
 	SMODS.save_all_config()
 	G.ADJUST_AREAS:remove()
+	G.FUNCS.openModUI_Unjank()
 end
 
 function unjank_cardarea_selection_box(areas)
