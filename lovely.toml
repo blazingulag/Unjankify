@@ -7,7 +7,7 @@ priority = 12
 [[patches]]
 [patches.pattern]
 target = '=[SMODS _ "src/overrides.lua"]'
-pattern = '''local t = {n = G.UIT.ROOT, config = {align = "cm", colour = G.C.CLEAR}, nodes = {'''
+pattern = '''local object = {n = G.UIT.ROOT, config = {align = "cm", colour = G.C.CLEAR}, nodes = {'''
 position = "before"
 payload = '''
 local max_shown = math.max(13,math.ceil(#rank_cols/3))
