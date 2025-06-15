@@ -11,5 +11,6 @@ return {
         betmma_spells = {x=0,y=0},
         betmma_abilities = {x=0,y=0},
         Bakery_charm_area = {x=0,y=0},
+        cs_alignments = {x=0,y=0},
     }
 }
